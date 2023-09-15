@@ -7,6 +7,23 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;
+    
+}
+
+:root {
+    --text-color: #FE0000;
+    --second-text-color: #F28500;
+    --bg-color: #C9F0FF;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    min-height: 50vh;
+    padding: 10rem 9% 2rem;
 }
 
 .navbar {
@@ -14,33 +31,60 @@
     font-size: 50px;
 }
 
+.navbar a {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* home section */
 .home{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--bg-color);
 }
 
-.home .btn {
-    /* margin-top: 5cm; */
-    justify-content: center;
+.home .link {
+    cursor: pointer;
     font-size: large;
+    cursor: pointer;
 }
 
 .link-box {
-    margin-top: 5cm;
     text-align: center;
-    line-height: 1.4;
     justify-content: center;
-    list-style-type: none;
-    margin-bottom: 20px;
-    background-color: ;
+    border: .1rem solid var(--text-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
     position: relative;
-    transition: .5s;
+    transition: .7s;
 }
 
-.link-box :hover {
-    transform: scale(1.02);
+.link-box:hover {
+    transform: scale(1.05);
+}
+
+.link-box p {
+    font-size: x-large;
+    padding: 10px;
+}
+
+.link-box a {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    /* background: var(--text-color); */
+    border-radius: 4rem;
+    border: .1rem solid var(--text-color);
+    /* box-shadow: 0 0 1rem var(--second-text-color); */
+    font-size: 1.6rem;
+    color: var(--text-color);
+    /* letter-spacing: .1rem; */
+    font-weight: 600;
+    transition: .4s ease;
+}
+  
+.link-box a:hover {
+    background: var(--text-color);
+    color: var(--bg-color)
 }
