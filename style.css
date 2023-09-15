@@ -36,7 +36,7 @@ section {
     font-weight: bold;
 }
 
-/* home section */
+/* home section first page*/
 .home{
     display: flex;
     justify-content: center;
@@ -88,3 +88,11 @@ section {
     background: var(--text-color);
     color: var(--bg-color)
 }
+
+/* home section second page  */
+.home-second {
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
