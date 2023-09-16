@@ -10,9 +10,9 @@
 }
 
 :root {
-    --text-color: #FE0000;
-    --second-text-color: #F28500;
-    --bg-color: #C9F0FF;
+    --text-color: #33FFCC;
+    --second-text-color: #FFFFFF;
+    --bg-color: #1C1F25;
 }
 
 body {
@@ -55,7 +55,7 @@ section {
     border: .1rem solid var(--text-color);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 20px #518f7f;
     position: relative;
     transition: .7s;
 }
@@ -67,6 +67,7 @@ section {
 .link-box p {
     font-size: x-large;
     padding: 10px;
+    color: var(--second-text-color);
 }
 
 .link-box a {
@@ -74,23 +75,23 @@ section {
     padding: 1rem 2.8rem;
     border-radius: 4rem;
     border: .1rem solid var(--text-color);
-    /* box-shadow: 0 0 1rem var(--second-text-color); */
     font-size: 1.6rem;
     color: var(--text-color);
     font-weight: 600;
     transition: .4s ease;
 }
-  
+
 .link-box a:hover {
     background: var(--text-color);
     color: var(--bg-color)
 }
 
 /* home section second page  */
-.home-second {
+.home-problems {
     text-align: center;
     padding-top: 30px;
-    
+    font-size: larger;
+    color: var(--second-text-color);
 }
 
 .problemset {
@@ -98,23 +99,58 @@ section {
     text-align: left;
     border: .1rem solid var(--text-color);
     border-radius: 15px;
-    
 }
 
 .problemset li{
     list-style-type: none;
-    /* border: .1rem solid var(--second-text-color); */
+    font-size: 20px;
+}
+
+.problemset li:hover {
+    border-bottom: 2px double #518f7f;
+}
+
+.problemset a {
+    color: var(--second-text-color);
 }
 
 span {
     display: inline-flex;
     font-size: small;
     border: 1px solid var(--text-color);
-    padding: 0px 5px 0px;
+    padding: 1px 5px 1px;
     border-radius: 50%;
-    background-color: #FE0000;
-    color: #C9F0FF;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    font-weight: bolder;
 }
 
+/* demo problem-1 */
+.p1 {
+    color: var(--second-text-color);
+}
+
+.p1 .p-name {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.statement-p1 {
+    align-items: center;
+    line-height: 2;
+}
+
+.in {
+    color: var(--text-color);
+    /* text-align: left; */
+}
+
+.out {
+    color: var(--text-color);
+}
+
+.sample-in {
+    
+}
 
 
