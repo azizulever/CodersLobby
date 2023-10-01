@@ -1,6 +1,6 @@
 *{
     margin: 10px;
-    padding: 0;
+    padding: 5px;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
@@ -27,12 +27,30 @@ section {
 
 .navbar {
     text-align: center;
-    font-size: 50px;
+    align-items: center;
 }
 
-.navbar a {
+.logo-text {
+    font-size: 50px;
     color: var(--text-color);
     font-weight: bold;
+}
+
+.sign-in-btn {
+    cursor: pointer;
+    font-size: large;
+    cursor: pointer;
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    color: var(--second-text-color);
+    transition: .4s ease;
+}
+
+.sign-in-btn:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
 }
 
 span {
@@ -105,22 +123,6 @@ span {
     font-size: x-large;
     padding: 10px;
     color: var(--second-text-color);
-}
-
-/* .link-box-contestent a {
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    border-radius: 4rem;
-    border: .1rem solid var(--text-color);
-    font-size: 1.6rem;
-    color: var(--text-color);
-    font-weight: 600;
-    transition: .4s ease;
-} */
-
-.link-box-contestent a:hover {
-    /* background: var(--text-color);
-    color: var(--bg-color) */
 }
 
 .link-box-host {
