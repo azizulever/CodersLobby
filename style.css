@@ -35,6 +35,10 @@ section {
     font-weight: bold;
 }
 
+span {
+    color: var(--text-color);
+}
+
 /* home section first page*/
 .home{
     display: flex;
@@ -43,13 +47,46 @@ section {
     background-color: var(--bg-color);
 }
 
-.home .link {
+.home .link-contestent {
     cursor: pointer;
     font-size: large;
     cursor: pointer;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    border-radius: 4rem;
+    border: .1rem solid var(--text-color);
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: .4s ease;
 }
 
-.link-box {
+.home .link-contestent:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.home .link-host {
+    cursor: pointer;
+    font-size: large;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    border-radius: 4rem;
+    border: .1rem solid var(--text-color);
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    background: var(--text-color);
+    font-weight: 600;
+    transition: .4s ease;
+}
+
+.home .link-host:hover {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.link-box-contestent {
     text-align: center;
     justify-content: center;
     border: .1rem solid var(--text-color);
@@ -60,17 +97,54 @@ section {
     transition: .7s;
 }
 
-.link-box:hover {
+.link-box-contestent:hover {
     transform: scale(1.05);
 }
 
-.link-box p {
+.link-box-contestent p {
     font-size: x-large;
     padding: 10px;
     color: var(--second-text-color);
 }
 
-.link-box a {
+/* .link-box-contestent a {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    border-radius: 4rem;
+    border: .1rem solid var(--text-color);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: .4s ease;
+} */
+
+.link-box-contestent a:hover {
+    /* background: var(--text-color);
+    color: var(--bg-color) */
+}
+
+.link-box-host {
+    text-align: center;
+    justify-content: center;
+    border: .1rem solid var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px #518f7f;
+    position: relative;
+    transition: .7s;
+}
+
+.link-box-host:hover {
+    transform: scale(1.05);
+}
+
+.link-box-host p {
+    font-size: x-large;
+    padding: 10px;
+    color: var(--second-text-color);
+}
+
+.link-box-host a {
     display: inline-block;
     padding: 1rem 2.8rem;
     border-radius: 4rem;
@@ -81,10 +155,11 @@ section {
     transition: .4s ease;
 }
 
-.link-box a:hover {
+.link-box-host a:hover {
     background: var(--text-color);
     color: var(--bg-color)
 }
+
 
 /* home section second page  */
 .home-problems {
@@ -114,7 +189,7 @@ section {
     color: var(--second-text-color);
 }
 
-span {
+.order {
     display: inline-flex;
     font-size: small;
     border: 1px solid var(--text-color);
@@ -149,8 +224,9 @@ span {
     color: var(--text-color);
 }
 
-.sample-in {
-    
+.sample-in-out {
+    display: flex;
+    color: var(--text-color);
 }
 
 
