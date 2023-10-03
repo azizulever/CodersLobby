@@ -219,16 +219,42 @@ span {
 
 .in {
     color: var(--text-color);
-    /* text-align: left; */
 }
 
 .out {
     color: var(--text-color);
 }
 
-.sample-in-out {
+.sample-box {
+    /* margin: auto; */
     display: flex;
+    border: 1px solid var(--text-color);
+    justify-content: space-between;
+    width: 50%;
+}
+
+.s-in {
     color: var(--text-color);
 }
 
+.s-out {
+    color: var(--text-color);
+}
 
+.submit {
+    cursor: pointer;
+    font-size: large;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    background: var(--text-color);
+    transition: .4s ease;
+}
+
+.submit:hover {
+    background-color: var(--bg-color);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+}
