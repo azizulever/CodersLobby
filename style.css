@@ -20,10 +20,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-section {
-    min-height: 50vh;
+/* section {
+    min-height: 20vh;
     padding: 10rem 9% 2rem;
-}
+} */
 
 .navbar {
     text-align: center;
@@ -226,7 +226,6 @@ span {
 }
 
 .sample-box {
-    /* margin: auto; */
     display: flex;
     border: 1px solid var(--text-color);
     justify-content: space-between;
@@ -257,4 +256,11 @@ span {
     background-color: var(--bg-color);
     border: 1px solid var(--text-color);
     color: var(--text-color);
+}
+
+/* submit code section */
+.home-submit-code .submit-area{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
