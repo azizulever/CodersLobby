@@ -259,8 +259,19 @@ span {
 }
 
 /* submit code section */
-.home-submit-code .submit-area{
-    margin: auto;
+/* .home-submit-code{
+    display: flex;
+} */
+
+.sumbit-title {
+    color: var(--text-color);
+}
+
+textarea {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    width: 60%;
+    height: 350px;
     justify-content: center;
-    align-items: center;
 }
