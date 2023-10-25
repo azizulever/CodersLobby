@@ -1,10 +1,8 @@
-*{
+* {
     margin: 10px;
     padding: 5px;
     box-sizing: border-box;
     text-decoration: none;
-    border: none;
-    outline: none;
     scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;
 }
@@ -19,11 +17,6 @@ body {
     background: var(--bg-color);
     font-family: 'Open Sans', sans-serif;
 }
-
-/* section {
-    min-height: 20vh;
-    padding: 10rem 9% 2rem;
-} */
 
 .navbar {
     text-align: center;
@@ -58,7 +51,7 @@ span {
 }
 
 /* home section first page*/
-.home{
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,7 +171,7 @@ span {
     border-radius: 15px;
 }
 
-.problemset li{
+.problemset li {
     list-style-type: none;
     font-size: 20px;
 }
@@ -276,5 +269,6 @@ textarea {
 }
 
 .home-submit-code .submit {
-    align-items: center;
+    /* display: block; */
+    text-align: center;
 }
