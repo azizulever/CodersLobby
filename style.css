@@ -271,6 +271,7 @@ textarea {
     height: 43vh;
     justify-content: center;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 #language {
