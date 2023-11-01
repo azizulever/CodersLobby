@@ -7,6 +7,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+::selection {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}
+
 :root {
     --text-color: #33FFCC;
     --second-text-color: #FFFFFF;
