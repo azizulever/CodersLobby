@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Noto Sans Mono', sans-serif;
 }
 
 ::selection {
@@ -278,6 +281,10 @@ textarea {
     justify-content: center;
     margin-bottom: 30px;
     border-radius: 10px;
+}
+
+textarea::placeholder {
+    font-size: 30px;
 }
 
 #language {
