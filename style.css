@@ -68,6 +68,25 @@ span {
     background-color: var(--bg-color);
 }
 
+.home .link-host {
+    cursor: pointer;
+    font-size: large;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 4rem;
+    border: .1rem solid var(--text-color);
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    background: var(--text-color);
+    font-weight: 600;
+    transition: .4s ease;
+}
+
+.home .link-host:hover {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
 .home .link-contestent {
     cursor: pointer;
     font-size: large;
@@ -85,26 +104,6 @@ span {
 .home .link-contestent:hover {
     background: var(--text-color);
     color: var(--bg-color);
-}
-
-.home .link-host {
-    cursor: pointer;
-    font-size: large;
-    cursor: pointer;
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    border-radius: 4rem;
-    border: .1rem solid var(--text-color);
-    font-size: 1.2rem;
-    color: var(--bg-color);
-    background: var(--text-color);
-    font-weight: 600;
-    transition: .4s ease;
-}
-
-.home .link-host:hover {
-    background: var(--bg-color);
-    color: var(--text-color);
 }
 
 .link-box-contestent {
