@@ -14,6 +14,8 @@ const fbApp = firebase.initializeApp(firebaseConfig);
 var db = fs.getFirestore(fbApp);
 
 var app = express();
+app.set('view engine', 'ejs');
+
 app.use(bodyParser());
 
 var option = { stats: true };
@@ -88,6 +90,19 @@ app.get("/fullStat", function (req, res) {
     res.send(data);
   });
 });
+
+app.get("/history", async function (req, res){
+    const querySnapshot = await fs.getDocs(
+        fs.collection(db, "submissions"), 
+        fs.orderBy("createdAt", "desc")
+      );
+    //   querySnapshot.forEach((doc) => {
+    //     console.log(doc.id, " => ", doc.data());
+    //   });
+    res.render("history", {
+        histories: querySnapshot, 
+    });
+  });
 
 app.listen(port);
 

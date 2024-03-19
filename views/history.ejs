@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+</head>
+<body>
+<h2>History</h2>
+<div class="submissions-container">
+    <% histories.forEach(function(submission) { %>
+        <div classs="submission">
+            <span class="id">id: <%= submission.id %></span>
+            <p>isSuccess: <%= submission["_document"]["data"]["value"]["mapValue"]["fields"]["isSuccess"]["booleanValue"] %></p>
+            <p>code:</p>
+            <pre> <%= submission["_document"]["data"]["value"]["mapValue"]["fields"]["code"]["stringValue"] %></pre>
+            <p>expectedOutput: <%= submission["_document"]["data"]["value"]["mapValue"]["fields"]["expectedOutput"]["stringValue"] %></p>
+            <p>output: <%= submission["_document"]["data"]["value"]["mapValue"]["fields"]["output"]["stringValue"] %></p>
+            <p>time: <%= timeElapsed(submission["_document"]["data"]["value"]["mapValue"]["fields"]["createdAt"]["integerValue"]) %></p>
+            
+        </div>
+        <hr/>
+      <% }); %>
+</div>
+</body>
+</html>
+
+<%
+function timeElapsed(timestamp) {
+    var now = Date.now();
+    var elapsedTimeInSeconds = Math.floor((now - timestamp) / 1000);
+
+    if (elapsedTimeInSeconds < 60) {
+        return elapsedTimeInSeconds + " seconds ago";
+    } else if (elapsedTimeInSeconds < 3600) {
+        var minutes = Math.floor(elapsedTimeInSeconds / 60);
+        return minutes + " minutes ago";
+    } else if (elapsedTimeInSeconds < 86400) {
+        var hours = Math.floor(elapsedTimeInSeconds / 3600);
+        return hours + " hours ago";
+    } else {
+        var days = Math.floor(elapsedTimeInSeconds / 86400);
+        return days + " days ago";
+    }
+}
+%>
