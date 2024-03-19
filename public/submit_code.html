@@ -11,22 +11,21 @@
 </head>
 
 <body>
+    <form method="POST" action="/compilecode">
     <section class="home-submit-code">
         <div>
             <!-- <label for="submit-area" class="sumbit-title"> Submit Code </label> -->
             <h3 class="sumbit-title">Submit Code</h3>
         </div>
 
-        <select name="language" id="language">
-            <option value="1">C++</option>
-            <option value="2">C</option>
-        </select>
-
-        <textarea name="code-area" id="code-area" placeholder="Write or paste your code here..."></textarea>
+        <textarea name="code" id="code-area" placeholder="Write or paste your code here..."></textarea>
         
         <!-- <a href="#" class="submit">Submit</a> -->
+        <center>
         <input type="submit" value="submit" name="submit">
+    </center>
     </section>
+    </form>
 </body>
 
 </html>

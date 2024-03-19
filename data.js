@@ -5,3 +5,5 @@ var problemSet = [
         "expectedOutput": "Hello, SMUCT"
     }
 ]
+
+module.exports = { problemSet };
